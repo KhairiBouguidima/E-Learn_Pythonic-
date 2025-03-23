@@ -1,0 +1,40 @@
+{%extends "layout.html"%}
+
+{% block content %}
+<section class="container my-5">
+    <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-primary">About Pythonic</h1>
+            <p class="lead">
+                Pythonic is your go-to platform for mastering Python and programming. We offer high-quality tutorials, expert guidance, and a dynamic learning experience tailored for all skill levels.
+            </p>
+            
+            <h3 class="mt-4"><i class="bi bi-bullseye"></i> Our Mission</h3>
+            <p>Empowering developers by providing top-notch educational resources, real-world projects, and a strong community.</p>
+            
+            <h3 class="mt-4"><i class="bi bi-check-circle"></i> Why Choose Pythonic?</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="bi bi-globe"></i> Global Access</li>
+                        <li class="list-group-item"><i class="bi bi-person-badge"></i> Certified Instructors</li>
+                        <li class="list-group-item"><i class="bi bi-book"></i> Wide Range of Courses</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="bi bi-lightbulb"></i> Interactive Learning</li>
+                        <li class="list-group-item"><i class="bi bi-award"></i> Recognized Certifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+            <img src="{{ url_for('static', filename='about.jpg') }}" class="img-fluid rounded shadow-lg" alt="About Us">
+        </div>
+    </div>
+</section>
+{% endblock %}
